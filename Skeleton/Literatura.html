@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализи на литературни произведения - НВО 10. клас</title>
+    <link rel="stylesheet" href="/Design/designIndex.css">
+    
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".topic").forEach(item => {
+        item.addEventListener("click", function (event) {
+            event.stopPropagation();
+            let isActive = this.classList.contains("active");
+            document.querySelectorAll(".topic").forEach(topic => {
+                topic.classList.remove("active");
+            });
+            if (!isActive) {
+                this.classList.add("active");
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+    <header>
+        <nav id="navVisible">
+            <!-- Бутон "Назад" -->
+        <div class="nav-left">
+            <a class="back-btn" onclick="goBack()">← Назад</a>        
+            <div class="logo"><img src="/Photos/Index/mon-logo.jpg" alt="Лого на НВО 10 клас"></div>
+        </div>
+            <ul>
+                <li><a href="/index.html">Начало</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Ресурси</a>
+                    <div class="dropdown-content">
+                        <a href="/Skeleton/Tests.html">Примерни тестове и задачи</a>
+                        <a href="/Skeleton/Literatura.html">Анализи на литературни произведения</a>
+                        <a href="/Skeleton/BEL.html">Български език</a>
+                        <a href="/Skeleton/Nasoki_rezume.html">Насоки за писане на резюме, аргументативен текст или есе</a>
+                        <a href="/Skeleton/Info_Ispit.html">Информация за изпита</a>
+                    </div>
+                </li>
+                <li><a href="/Skeleton/Contacts.html">Контакти</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1 class="prep">Анализи на литературни произведения - <br>НВО 10. клас</h1>
+            <p class="prep">Тук ще намерите анализи на всички литературни произведения, включени на матурата по български език и литература за 10. клас</p>
+            
+        </div>
+    </section>
+
+    <section id="topics">
+        <div class="topic"><div class="topic-title">Паисий Хилендарски</div>
+        <div class="topic-content">
+            <a href="/Skeleton/Literature/Paisii_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Paisii_Istoriq.html">Из „История славянобългарска“ : Предисловие</a></div></div>
+        
+        
+        <div class="topic"><div class="topic-title">Петко Р. Славейков</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Petko_Slaveikov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Petko_Slaveikov_Izvoryt.html">„Изворът на Белоногата“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Христо Ботев</div>
+            <div class="topic-content">
+            <a href="/Skeleton/Literature/Botev_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Botev_Maice_si.html">„Майце си“</a>
+            <a href="/Skeleton/Literature/Botev_Moqta_Molitva.html">„Моята молитва“</a>
+            <a href="/Skeleton/Literature/Botev_Haji_Dimitar.html">„Хаджи Димитър“</a>
+            <a href="/Skeleton/Literature/Botev_Obesvaneto.html">„Обесването на Васил Левски“</a>
+            <a href="/Skeleton/Literature/Botev_Strannik.html">„Странник“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Иван Вазов</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Vazov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Vazov_Levski.html">Одата „Левски“</a>
+            <a href="/Skeleton/Literature/Vazov_Pod_Igoto.html">Романът ,,Под игото"</a>
+            <a href="/Skeleton/Literature/Vazov_Gost.html">Из „Под игото“: „Гост“</a>
+            <a href="/Skeleton/Literature/Vazov_Novata_Molitva.html">Из „Под игото“: „Новата молитва на Марка“</a>
+            <a href="/Skeleton/Literature/Vazov_Piqnstvo.html">Из „Под игото“: „Пиянство на един народ“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Алеко Константинов</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Aleko_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Aleko_Bai_Ganio.html">„Бай Ганьо. Невероятни разкази за един съвременен българин“: „Бай Ганьо се върна от Европа“</a></div></div>
+            
+            
+            <div class="topic"><div class="topic-title">Пенчо Славейков</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Pencho_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Pencho_Cis_Moll.html">„Cis moll“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Пейо Яворов</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Peio_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Peio_Armenci.html">„Арменци“</a>
+            <a href="/Skeleton/Literature/Peio_Dve_Hubavi_Ochi.html">„Две хубави очи“</a>
+            <a href="/Skeleton/Literature/Peio_V_chasa.html">„В часа на синята мъгла“</a></div></div>
+        
+        
+        <div class="topic"><div class="topic-title">Димчо Дебелянов</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Dimcho_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Dimcho_Da_Se_zavyrnesh.html">„Да се завърнеш…“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Елин Пелин</div><div class="topic-content">
+            
+                <a href="/Skeleton/Literature/Elin_Pelin_Biografiq.html"><b>Биография</b></a>
+                <a href="/Skeleton/Literature/Elin_Pelin_Geracite.html">„Гераците“</a></div></div>
+        
+        
+            
+                <div class="topic"><div class="topic-title">Гео Милев</div><div class="topic-content">
+            
+                    <a href="/Skeleton/Literature/Geo_Milev_Biografiq.html"><b>Биография</b></a>
+                    <a href="/Skeleton/Literature/Geo_Milev_Septemvri.html">„Септември“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Христо Смирненски</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Smirnenski_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Smirnenski_Zimni_Vecheri.html">„Зимни вечери“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Атанас Далчев</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Atanas_Dalchev_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Atanas_Dalchev_Povest.html">„Повест“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Йордан Йовков</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Iordan_Iovkov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Iordan_Iovkov_Inje.html">„Индже“</a>
+            <a href="/Skeleton/Literature/Iordan_Iovkov_Albena.html">„Албена“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Никола Вапцаров</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Nikola_Vapcarov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Nikola_Vapcarov_Pismo.html">„Писмо“ („Ти помниш ли...“)</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Димитър Димов</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Dimitar_Dimov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Dimitar_Dimov_Tutun.html">Из „Тютюн“ (1951 г.): І и ХVІ глава от І част (Д. Димов)</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Николай Хайтов</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Haitov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Haitov_Dyrvo_Bez_Koren.html">„Дърво без корен“</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Йордан Радичков</div><div class="topic-content">
+            <a href="/Skeleton/Literature/Radichkov_Biografiq.html"><b>Биография</b></a>
+            <a href="/Skeleton/Literature/Radichkov_Nejna_Spirala.html">„Нежната спирала“</a></div></div>
+    </section>
+
+    <footer id="contact">
+        <p>Свържи се с нас: <a href="/Skeleton/Contacts.html">nvo_10th_grade2025@abv.bg</a></p>
+        <p>© 2025 НВО 10. клас. Всички права запазени.</p>
+    </footer>
+    <script src="/Scripts/GoBack_Index.js"></script>
+    
+    
+</body>
+</html>

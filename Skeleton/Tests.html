@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализи на литературни произведения - НВО 10. клас</title>
+    <link rel="stylesheet" href="/Design/designIndex.css">
+    
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".topic").forEach(item => {
+        item.addEventListener("click", function (event) {
+            event.stopPropagation();
+            let isActive = this.classList.contains("active");
+            document.querySelectorAll(".topic").forEach(topic => {
+                topic.classList.remove("active");
+            });
+            if (!isActive) {
+                this.classList.add("active");
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+    <header>
+        <nav id="navVisible">
+            <!-- Бутон "Назад" -->
+        <div class="nav-left">
+            <a class="back-btn" onclick="goBack()">← Назад</a>        
+            <div class="logo"><img src="/Photos/Index/mon-logo.jpg" alt="Лого на НВО 10 клас"></div>
+        </div>
+            <ul>
+                <li><a href="/index.html">Начало</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Ресурси</a>
+                    <div class="dropdown-content">
+                        <a href="/Skeleton/Tests.html">Примерни тестове и задачи</a>
+                        <a href="/Skeleton/Literatura.html">Анализи на литературни произведения</a>
+                        <a href="/Skeleton/BEL.html">Български език</a>
+                        <a href="/Skeleton/Nasoki_rezume.html">Насоки за писане на резюме, аргументативен текст или есе</a>
+                        <a href="/Skeleton/Info_Ispit.html">Информация за изпита</a>
+                    </div>
+                </li>
+                <li><a href="/Skeleton/Contacts.html">Контакти</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1 class="prep">Тренировъчни тестове по български език и литература</h1>
+           
+            
+        </div>
+    </section>
+
+    <section id="topics">
+        
+        <center><h2>Тестове по български език</h2></center>
+        
+        <div class="topic"><a href="/Skeleton/Tests_Literature/Pravopisna_norma.html">Правописна норма- ТЕСТ 1</a></div>
+        <div class="topic"><a href="/Skeleton/Tests_Literature/Gramatichna_norma.html">Граматична норма- ТЕСТ 2</a></div>
+        <div class="topic"><a href="/Skeleton/Tests_Literature/Punktuacionna_norma.html">Пунктуационна норма- ТЕСТ 3</a></div>
+        <div class="topic"><a href="/Skeleton/Tests_Literature/Leksikalna_norma.html">Лексикална норма- ТЕСТ 4</a></div>
+        
+        <center><h2>Тестове по литература</h2></center>
+        
+        
+        <div class="topic"><div class="topic-title">Паисий Хилендарски</div>
+        <div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Paisii.html">Из „История славянобългарска“ : Предисловие - ТЕСТ 5</a></div></div>
+        
+        
+        <div class="topic"><div class="topic-title">Петко Р. Славейков</div>
+        
+        <div class="topic-content">
+            
+            <a href="/">„Изворът на Белоногата“ - ТЕСТ 6</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Христо Ботев</div>
+            <div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Botev_Maice_Si.html">„Майце си“ и ,,Моята молитва" - ТЕСТ 7</a>
+            
+            <a href="/Skeleton/Tests_Literature/Botev_Haji.html">„Хаджи Димитър“ и „Обесването на Васил Левски“ - ТЕСТ 8  </a>
+            
+            <a href="/Skeleton/Tests_Literature/Botev_Strannik.html">„Странник“ - ТЕСТ 9</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Иван Вазов</div><div class="topic-content">
+           
+            <a href="/Skeleton/Tests_Literature/Vazov_Epopeq_na_zabravenite.html">Одата „Левски“ - ТЕСТ 10</a>
+            <a href="/Skeleton/Tests_Literature/Vazov_Pod_Igoto.html">Романът ,,Под игото" - ТЕСТ 11</a>
+            
+            </div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Алеко Константинов</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Aleko_Bai_Ganio.html">„Бай Ганьо. Невероятни разкази за един съвременен българин“: „Бай Ганьо се върна от Европа“ - <br>ТЕСТ 12</a></div></div>
+            
+            
+            <div class="topic"><div class="topic-title">Пенчо Славейков</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Pencho_Cis_Moll.html">„Cis moll“ - ТЕСТ 13</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Пейо Яворов</div><div class="topic-content">
+            <a href="/Skeleton/Tests_Literature/Peio_Yavorov.html"><b>Пейо Яворов - произведения - ТЕСТ 14</b></a>
+            <a href="/Skeleton/Tests_Literature/Peio_Yavorov_Armenci.html">„Арменци“</a>
+            </div></div>
+        
+        
+        <div class="topic"><div class="topic-title">Димчо Дебелянов</div><div class="topic-content">
+           
+            <a href="/Skeleton/Tests_Literature/Dimcho_Debelqnov_Da_se_zavyrnesh.html">„Да се завърнеш…“ - ТЕСТ 15</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Елин Пелин</div><div class="topic-content">
+            
+                
+                <a href="/Skeleton/Tests_Literature/Elin_Pelin_Geracite.html">„Гераците“ - ТЕСТ 16</a></div></div>
+        
+        
+            
+                <div class="topic"><div class="topic-title">Гео Милев</div><div class="topic-content">
+            
+                    
+                    <a href="/Skeleton/Tests_Literature/Geo_Milev_Septemvri.html">„Септември“ - ТЕСТ 17</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Христо Смирненски</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Smirnenski_Zimni_vecheri.html">„Зимни вечери“ - ТЕСТ 18</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Атанас Далчев</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Dalchev_Povest.html">„Повест“ - ТЕСТ 19</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Йордан Йовков</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Iovkov_Inje.html">„Индже“ - ТЕСТ 20</a>
+            <a href="/Skeleton/Tests_Literature/Iordan_Iovkov_Albena.html">„Албена“ - ТЕСТ 21</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Никола Вапцаров</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Vapcarov_Pismo.html">„Писмо“ („Ти помниш ли...“) - ТЕСТ 22</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Димитър Димов</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Dimitar_Dimov_Tutun.html">Из „Тютюн“ (1951 г.): І и ХVІ глава от І част (Д. Димов) - ТЕСТ 23</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Николай Хайтов</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Haitov_Dyrvo_bez_koren.html">„Дърво без корен“ - ТЕСТ 24</a></div></div>
+        
+        
+            <div class="topic"><div class="topic-title">Йордан Радичков</div><div class="topic-content">
+            
+            <a href="/Skeleton/Tests_Literature/Radichkov_Nejna_spirala.html">„Нежната спирала“ - ТЕСТ 25</a></div></div>
+    </section>
+
+    <footer id="contact">
+        <p>Свържи се с нас: <a href="/Skeleton/Contacts.html">nvo_10th_grade2025@abv.bg</a></p>
+        <p>© 2025 НВО 10. клас. Всички права запазени.</p>
+    </footer>
+    <script src="/Scripts/GoBack_Index.js"></script>
+    
+    
+</body>
+</html>
